@@ -218,13 +218,13 @@ $deptMail = new PHPMailer(true);
 $deptMail->isSMTP();
 $deptMail->Host       = 'smtp.gmail.com';
 $deptMail->SMTPAuth   = true;
-$deptMail->Username   = '231ct020@kongunaducollege.ac.in';
+$deptMail->Username   = 'examcell@gmail.com';
 $deptMail->Password   = 'zyowujjytxuffpqt';
 $deptMail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $deptMail->Port       = 587;
 
 $deptMail->setFrom(
-'231ct020@kongunaducollege.ac.in',
+'examcell@gmail.com',
 'Examiner Cell'
 );
 
