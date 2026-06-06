@@ -83,12 +83,12 @@ while ($exam = $result->fetch_assoc()) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = '231ct020@kongunaducollege.ac.in';  // YOUR EMAIL
+            $mail->Username   = 'examcell@gmail.com';  // YOUR EMAIL
             $mail->Password   = 'fviypdyipbnbxbna';                  // APP PASSWORD
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
-            $mail->setFrom('231ct020@kongunaducollege.ac.in', 'Lab Exam System');
+            $mail->setFrom('examcell@gmail.com', 'Lab Exam System');
             $mail->addAddress($exam['internal_email']);
 
             $mail->isHTML(true);
