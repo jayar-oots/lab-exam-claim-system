@@ -64,7 +64,7 @@ while ($exam = $result->fetch_assoc()) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = '231ct020@kongunaducollege.ac.in';   // CHANGE
+            $mail->Username   = 'examcell@gmail.com';   // CHANGE
             $mail->Password   = 'your_app_password';     // CHANGE
             $mail->SMTPSecure = 'tls';
             $mail->Port       = 587;
