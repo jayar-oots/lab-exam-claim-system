@@ -19,14 +19,14 @@ function getMailer()
     $mail->SMTPAuth   = true;
 
     // 👇 CHANGE ONLY THESE TWO
-    $mail->Username   = '231ct020@kongunaducollege.ac.in';
+    $mail->Username   = 'examcell@gmail.com';
     $mail->Password   = 'fviypdyipbnbxbna';
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
     // MAIL SETTINGS
-    $mail->setFrom('231ct020@kongunaducollege.ac.in', 'Lab Claim System');
+    $mail->setFrom('examcell@gmail.com', 'Lab Claim System');
     $mail->isHTML(true);
 
     return $mail;
